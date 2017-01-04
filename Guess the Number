@@ -1,0 +1,28 @@
+#Jan 3, 2017
+#testing out Github through some python code uploads :p
+
+from random import randint
+num = randint(1,20001)
+
+name = raw_input("What is your name? ")
+print "Hello " + name + ". Let's play a game." 
+print "I have a random number between 1 and 20,000. Try to guess my number under 15 tries."
+guess = int(raw_input("Guess a number: "))
+
+c = 12
+
+while 1:
+  if guess > num: 
+    print "Too high. Guess lower:"
+    guess = int(raw_input("Guess a number: "))
+    c -= 1
+  elif guess < num: 
+    print "Too low. Guess Higher."
+    guess = int(raw_input("Guess a number: "))
+    c -= 1
+  elif guess == num:
+    print "BINGO. Congrats you got it!"
+    break
+  if c == 0:
+    print "WRONG. Aw too bad you lose, the number is actually " + str(num) + "."
+    break
