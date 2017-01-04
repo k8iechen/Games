@@ -12,17 +12,17 @@ guess = int(raw_input("Guess a number: "))
 c = 12
 
 while 1:
-  if guess > num: 
-    print "Too high. Guess lower:"
-    guess = int(raw_input("Guess a number: "))
-    c -= 1
-  elif guess < num: 
-    print "Too low. Guess Higher."
-    guess = int(raw_input("Guess a number: "))
-    c -= 1
-  elif guess == num:
-    print "BINGO. Congrats you got it!"
-    break
-  if c == 0:
-    print "WRONG. Aw too bad you lose, the number is actually " + str(num) + "."
-    break
+    if guess > num: 
+        print "Too high. Guess lower:"
+        guess = int(raw_input("Guess a number: "))
+        c -= 1
+    elif guess < num: 
+        print "Too low. Guess Higher."
+        guess = int(raw_input("Guess a number: "))
+        c -= 1
+    elif guess == num:
+        print "BINGO. Congrats you got it!"
+        break
+    if c == 0:
+        print "WRONG. Aw too bad you lose, the number is actually " + str(num) + "."
+        break
